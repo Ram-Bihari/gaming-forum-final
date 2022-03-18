@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game Reviews</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <section id="main-read">
+      <nav>
+        <ul id="navbar-ul">
+          <li class="options"><a href="/">Home</a></li>
+          <li class="options">Reviews</li>
+          <li class="options">Post</li>
+        </ul>
+      </nav>
+    </section>
+
+    <div class="reviews">
+      <h2>Reviews!</h2>
+      <% data.forEach(function(game){ %>
+      <div class="review-container">
+        <h3 class="review-h3"><%= game.gamename %></h3>
+        <p class="review-p"><%= game.review %></p>
+        <a href="/update/<%= game._id %>">
+          <button class="updateButton">Update</button>
+        </a>
+        <a href="/delete/<%= game._id %>">
+          <button class="deleteButton">Delete</button>
+        </a>
+      </div>
+      <hr style="width: 60%" />
+      <% }) %>
+    </div>
+  </body>
+</html>

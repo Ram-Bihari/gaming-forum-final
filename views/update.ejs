@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Review</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+  </head>
+  <body>
+    <section id="reviewForm">
+    <div id="newReview">
+      <h1>Update a review!</h1>
+      <div id="formDiv">
+        <form action="/update/<%= game._id %>" method="POST">
+          <input type="text" name="gamename" value="<%= game.gamename %>" placeholder="Game Name" />
+          <textarea name="review" id="" cols="30" rows="10"><%= game.review %></textarea>
+          <input type="submit" value="Update" id="submitBtn">
+        </form>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>

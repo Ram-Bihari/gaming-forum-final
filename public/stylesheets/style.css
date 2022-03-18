@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#main {
+  background: url("https://gamingforum12.herokuapp.com/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  top: 0;
+}
+
+#navbar-ul {
+  font-size: 18px;
+  flex: auto;
+  list-style: none;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.options {
+  display: inline-block;
+  margin: 20px;
+  color: white;
+}
+
+.options:hover {
+  color: orange;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#mainText {
+  text-align: left;
+  padding: 40px 60px;
+  color: white;
+}
+
+#formDiv {
+  width: 80%;
+  height: 60vh;
+  background-color: #000;
+  margin: auto;
+  width: 20;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#goToNewReview {
+  border-radius: 20px;
+  background-color: orange;
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex: auto;
+  flex-direction: column;
+  outline: none;
+  border-color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+#reviewForm {
+  width: 30%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  padding: 20px;
+  margin: 10px;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 62%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+#newReview h1 {
+  text-align: center;
+  background-color: #e3e3e3;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#submitBtn {
+  margin-top: 14px;
+  width: 70%;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+}
+
+#submitBtn:hover {
+  background-color: darkorange;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.buttons {
+  position: absolute;
+  top: 75vh;
+  left: 10vh;
+}
+
+.writeReviews {
+  background-color: navy;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.readReviews {
+  position: relative;
+  top: 40px;
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.writeReviews:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: navy;
+}
+
+.readReviews:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: black;
+  color: white;
+}
+
+#main-read {
+  margin: 0;
+  padding: 0;
+  background: url("https://gamingforum12.herokuapp.com/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  top: 0;
+}
+
+.review-container {
+  width: 80%;
+  height: 20vh;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  color: black;
+  margin: auto;
+}
+
+.review-h3 {
+  font-weight: 900;
+  color: darkturquoise;
+}
+
+.reviews h2 {
+  padding-left: 140px;
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
+
+.updateButton {
+  background-color:darkgoldenrod;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.updateButton:hover {
+  cursor: pointer;
+  background-color: rgb(161, 118, 7);
+}
+
+.deleteButton {
+  background-color:red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+  background-color: rgb(197, 10, 10);
+}
+
